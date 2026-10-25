@@ -1,0 +1,919 @@
+{
+  "brands": [
+    {
+      "id": "brand-lumino-cloud",
+      "name": "Lumino Cloud",
+      "tagline": "Resilient, high-throughput cloud infrastructure for modern enterprise.",
+      "industry": "Enterprise Cloud Infrastructure & DevOps",
+      "description": "Lumino Cloud provides multi-region mesh orchestration, distributed compute, and sovereign enterprise cloud management.",
+      "voiceSummary": "Authoritative yet approachable, precision-oriented, empathetic, and strictly factual. Never arrogant, hyperbolic, or dismissive of competitors.",
+      "logoText": "LUMINO",
+      "primaryColor": "#6366f1",
+      "sampleDataLabel": "Enterprise Brand Profile"
+    },
+    {
+      "id": "brand-solaris-sunscreen",
+      "name": "Solaris Skincare",
+      "tagline": "Dermatologist-developed mineral sunscreen and gentle daily sun defense.",
+      "industry": "Cosmetics & Dermatological Sun Protection",
+      "description": "Solaris formulates broad-spectrum mineral sunscreens powered by non-nano zinc oxide.",
+      "voiceSummary": "Clinical, reassuring, factual, and strictly compliant with FDA OTC sunscreen standards. Never promise miracle cures or make hyperbolic anti-aging claims.",
+      "logoText": "SOLARIS",
+      "primaryColor": "#f59e0b",
+      "sampleDataLabel": "Cosmetic Brand Profile"
+    }
+  ],
+  "rules": [
+    {
+      "id": "rule-prohibited-hype",
+      "brandId": "brand-lumino-cloud",
+      "title": "Prohibition on Absolute Guarantees and Hyperbole",
+      "category": "terminology",
+      "description": "Never state or imply that the system is 100% bug-free, infallible, or unconditionally guaranteed against breaches or failures.",
+      "prohibitedWording": [
+        "unbreakable guarantee",
+        "hack-proof",
+        "military-grade hack-proof",
+        "100% bug-free",
+        "foolproof",
+        "infinite scalability",
+        "flawless"
+      ],
+      "severity": "critical",
+      "supportingSource": "Legal & Risk Mitigation Policy v3.8, Section 4.2",
+      "isActive": true,
+      "sampleDataLabel": "Verified Brand Standard",
+      "createdAt": "2026-01-10T00:00:00Z",
+      "updatedAt": "2026-01-10T00:00:00Z"
+    },
+    {
+      "id": "rule-respectful-competitors",
+      "brandId": "brand-lumino-cloud",
+      "title": "Respectful Competitive Positioning",
+      "category": "brand_tone",
+      "description": "Focus strictly on Lumino Cloud capabilities and engineering merits. Never disparage legacy providers or use derogatory terms for competitors.",
+      "prohibitedWording": [
+        "inferior competitors",
+        "slow dinosaurs",
+        "foolish",
+        "worthless",
+        "clueless",
+        "legacy trash"
+      ],
+      "severity": "high",
+      "supportingSource": "Brand Voice & Executive Communication Guidelines 2026 §3",
+      "isActive": true,
+      "sampleDataLabel": "Verified Brand Standard",
+      "createdAt": "2026-01-12T00:00:00Z",
+      "updatedAt": "2026-01-12T00:00:00Z"
+    },
+    {
+      "id": "rule-uptime-representation",
+      "brandId": "brand-lumino-cloud",
+      "title": "Accurate SLA & Uptime Representation",
+      "category": "factual_claims",
+      "description": "Uptime claims must accurately distinguish between the Enterprise Tier SLA (99.9%) and the Standard Tier availability target (99.5%). 99.999% uptime is strictly unapproved.",
+      "requiredWording": [
+        "SLA",
+        "Enterprise tier"
+      ],
+      "prohibitedWording": [
+        "99.999%",
+        "five nines across all tiers"
+      ],
+      "severity": "critical",
+      "supportingSource": "Service Level Agreement Terms of Service 2026, Schedule B",
+      "isActive": true,
+      "sampleDataLabel": "Verified Brand Standard",
+      "createdAt": "2026-01-15T00:00:00Z",
+      "updatedAt": "2026-01-15T00:00:00Z"
+    },
+    {
+      "id": "rule-official-product-naming",
+      "brandId": "brand-lumino-cloud",
+      "title": "Standard Product Nomenclature: Lumino Cloud Mesh",
+      "category": "terminology",
+      "description": "Always use the official product trademark \"Lumino Cloud Mesh\". Never hyphenate as \"Lumino-Mesh\" or abbreviate to \"LuminoMesh\".",
+      "requiredWording": [
+        "Lumino Cloud Mesh"
+      ],
+      "prohibitedWording": [
+        "LuminoMesh",
+        "Lumino-Mesh",
+        "Lumino Network"
+      ],
+      "severity": "medium",
+      "supportingSource": "Trademark & Product Marketing Style Guide 2026",
+      "isActive": true,
+      "sampleDataLabel": "Verified Brand Standard",
+      "createdAt": "2026-01-18T00:00:00Z",
+      "updatedAt": "2026-01-18T00:00:00Z"
+    },
+    {
+      "id": "rule-customer-metrics",
+      "brandId": "brand-lumino-cloud",
+      "title": "Verified Customer Count Substantiation",
+      "category": "compliance",
+      "description": "Enterprise customer counts cited in external collateral must directly cite audited quarterly figures. Never claim unverified customer numbers (e.g. 50,000+ or 45,000 enterprises).",
+      "severity": "high",
+      "supportingSource": "SEC/Corporate Regulatory Disclosure Policy §8",
+      "isActive": true,
+      "sampleDataLabel": "Verified Brand Standard",
+      "createdAt": "2026-01-20T00:00:00Z",
+      "updatedAt": "2026-01-20T00:00:00Z"
+    },
+    {
+      "id": "rule-active-security-cert",
+      "brandId": "brand-lumino-cloud",
+      "title": "Current Information Security Certification Standard",
+      "category": "compliance",
+      "description": "Public marketing must cite current ISO/IEC 27001:2025. References to obsolete ISO 27001:2022 standards are expired and non-compliant.",
+      "prohibitedWording": [
+        "ISO-27001:2022",
+        "ISO 27001:2022"
+      ],
+      "severity": "critical",
+      "supportingSource": "Information Security Governance & Compliance Officer Memo #2025-09",
+      "isActive": true,
+      "sampleDataLabel": "Verified Brand Standard",
+      "createdAt": "2026-01-22T00:00:00Z",
+      "updatedAt": "2026-01-22T00:00:00Z"
+    },
+    {
+      "id": "rule-accessibility-readability",
+      "brandId": "brand-lumino-cloud",
+      "title": "Acronym Expansion and Plain Language Accessibility",
+      "category": "accessibility",
+      "description": "First mentions of technical acronyms must provide the full expansion for cognitive accessibility. Sentences should maintain clear sentence structure.",
+      "severity": "low",
+      "supportingSource": "WCAG 2.2 AA Marketing Accessibility Standard",
+      "isActive": true,
+      "sampleDataLabel": "Verified Brand Standard",
+      "createdAt": "2026-01-25T00:00:00Z",
+      "updatedAt": "2026-01-25T00:00:00Z"
+    },
+    {
+      "id": "rule-visual-brand-consistency",
+      "brandId": "brand-lumino-cloud",
+      "title": "Logo Clearspace & Dark Mode Contrast",
+      "category": "visual_identity",
+      "description": "Collateral imagery and badges must maintain a minimum 4.5:1 contrast ratio against background surfaces and include clear descriptive alt text.",
+      "severity": "medium",
+      "supportingSource": "Brand Identity System Specification v4.0",
+      "isActive": true,
+      "sampleDataLabel": "Verified Brand Standard",
+      "createdAt": "2026-01-28T00:00:00Z",
+      "updatedAt": "2026-01-28T00:00:00Z"
+    },
+    {
+      "id": "rule-solaris-no-medical-claims",
+      "brandId": "brand-solaris-sunscreen",
+      "title": "Prohibition on Unapproved Medical Claims",
+      "category": "compliance",
+      "description": "Never claim that sunscreen cures skin cancer, reverses DNA damage, or acts as an absolute medical cure.",
+      "prohibitedWording": [
+        "cures skin cancer",
+        "miracle cure",
+        "reverses aging",
+        "100% sunblock"
+      ],
+      "severity": "critical",
+      "supportingSource": "Solaris Regulatory & FDA OTC Sunscreen Monograph Guide §2",
+      "isActive": true,
+      "sampleDataLabel": "Verified Brand Standard",
+      "createdAt": "2026-02-01T00:00:00Z",
+      "updatedAt": "2026-02-01T00:00:00Z"
+    },
+    {
+      "id": "rule-solaris-substantiated-claims",
+      "brandId": "brand-solaris-sunscreen",
+      "title": "Substantiation of SPF and Water Resistance Claims",
+      "category": "factual_claims",
+      "description": "Avoid unsupported claims. All performance claims regarding SPF protection or water resistance must cite registered clinical laboratory test results.",
+      "prohibitedWording": [],
+      "requiredWording": [
+        "broad spectrum SPF 50",
+        "water resistant up to 80 minutes"
+      ],
+      "severity": "high",
+      "supportingSource": "Clinical Photobiology Lab Study #SOL-2025-SPF50",
+      "isActive": true,
+      "sampleDataLabel": "Verified Brand Standard",
+      "createdAt": "2026-02-01T00:00:00Z",
+      "updatedAt": "2026-02-01T00:00:00Z"
+    },
+    {
+      "id": "rule-solaris-brand-naming",
+      "brandId": "brand-solaris-sunscreen",
+      "title": "Official Brand & Trademark Nomenclature: Solaris Mineral Sunscreen",
+      "category": "terminology",
+      "description": "Always use the official registered brand trademark \"Solaris Mineral Sunscreen\" or \"Solaris\". Never concatenate as \"SolarisSun\", hyphenate as \"Solaris-Sun\", or misspell as \"Solary\".",
+      "requiredWording": [
+        "Solaris Mineral Sunscreen",
+        "Solaris"
+      ],
+      "prohibitedWording": [
+        "SolarisSun",
+        "Solaris-Sun",
+        "Solary"
+      ],
+      "severity": "medium",
+      "supportingSource": "Solaris Brand Identity & Trademark Guidelines 2026 §1.2",
+      "isActive": true,
+      "sampleDataLabel": "Verified Brand Standard",
+      "createdAt": "2026-02-01T00:00:00Z",
+      "updatedAt": "2026-02-01T00:00:00Z"
+    },
+    {
+      "id": "rule-solaris-no-hyperbole",
+      "brandId": "brand-solaris-sunscreen",
+      "title": "Cosmetic Realism & Anti-Hyperbole",
+      "category": "brand_tone",
+      "description": "Do not make unscientific promises or claim miraculous overnight transformations. Promote realistic, healthy skin protection.",
+      "prohibitedWording": [
+        "magic formula",
+        "miracle protection"
+      ],
+      "severity": "medium",
+      "supportingSource": "Solaris Brand Guidelines 2026: Tone & Cosmetic Standards",
+      "isActive": true,
+      "sampleDataLabel": "Verified Brand Standard",
+      "createdAt": "2026-02-01T00:00:00Z",
+      "updatedAt": "2026-02-01T00:00:00Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-uptime-enterprise",
+      "brandId": "brand-lumino-cloud",
+      "claimText": "99.9% uptime SLA is guaranteed exclusively on the Lumino Enterprise Tier with multi-region active redundancy enabled.",
+      "supportingEvidence": "SLA Master Services Agreement v2026.1, Schedule C. Audited by Global Reliability Engineering Q1 2026.",
+      "productScope": "Lumino Cloud Enterprise Tier",
+      "validFrom": "2026-01-01",
+      "validUntil": "2027-12-31",
+      "status": "approved",
+      "sampleDataLabel": "Audited Claim Record",
+      "tags": [
+        "SLA",
+        "uptime",
+        "enterprise"
+      ],
+      "createdAt": "2026-01-10T00:00:00Z",
+      "updatedAt": "2026-01-10T00:00:00Z"
+    },
+    {
+      "id": "claim-uptime-standard",
+      "brandId": "brand-lumino-cloud",
+      "claimText": "Standard tier provides 99.5% target availability without financial service credit SLA guarantees.",
+      "supportingEvidence": "Standard Terms of Service §5.2.",
+      "productScope": "Lumino Cloud Standard Tier",
+      "validFrom": "2026-01-01",
+      "validUntil": "2027-12-31",
+      "status": "approved",
+      "sampleDataLabel": "Audited Claim Record",
+      "tags": [
+        "availability",
+        "standard-tier"
+      ],
+      "createdAt": "2026-01-10T00:00:00Z",
+      "updatedAt": "2026-01-10T00:00:00Z"
+    },
+    {
+      "id": "claim-soc2-iso27001",
+      "brandId": "brand-lumino-cloud",
+      "claimText": "SOC 2 Type II certified and ISO/IEC 27001:2025 audited across all EMEA and US data center clusters.",
+      "supportingEvidence": "Third-party audit report by Coalfire Systems & Schellman, Certificate Ref #ISO-2025-LUM-8831.",
+      "productScope": "All Global Data Centers",
+      "validFrom": "2025-06-01",
+      "validUntil": "2027-06-01",
+      "status": "approved",
+      "sampleDataLabel": "Audited Claim Record",
+      "tags": [
+        "security",
+        "compliance",
+        "iso27001",
+        "soc2"
+      ],
+      "createdAt": "2025-06-15T00:00:00Z",
+      "updatedAt": "2025-06-15T00:00:00Z"
+    },
+    {
+      "id": "claim-iso27001-legacy-expired",
+      "brandId": "brand-lumino-cloud",
+      "claimText": "ISO-27001:2022 interim standard certification for legacy North America servers.",
+      "supportingEvidence": "Archived BSI Audit Certificate #BSI-2022-NA-09 (Superceded).",
+      "productScope": "Legacy NA Servers Only",
+      "validFrom": "2022-01-01",
+      "validUntil": "2024-12-31",
+      "status": "expired",
+      "sampleDataLabel": "Archived Claim Record (Expired)",
+      "tags": [
+        "expired",
+        "legacy",
+        "iso27001"
+      ],
+      "createdAt": "2022-01-15T00:00:00Z",
+      "updatedAt": "2024-12-31T00:00:00Z"
+    },
+    {
+      "id": "claim-cold-start-latency",
+      "brandId": "brand-lumino-cloud",
+      "claimText": "Lumino Cloud Mesh delivers under 45ms cold-start microVM latency across 12 distributed edge regions.",
+      "supportingEvidence": "Independent benchmark report by CloudSpectator Research, Document #CS-2026-BENCH-44.",
+      "productScope": "Lumino Cloud Mesh Edge Compute",
+      "validFrom": "2026-01-15",
+      "validUntil": "2026-12-31",
+      "status": "approved",
+      "sampleDataLabel": "Audited Claim Record",
+      "tags": [
+        "latency",
+        "performance",
+        "edge"
+      ],
+      "createdAt": "2026-01-20T00:00:00Z",
+      "updatedAt": "2026-01-20T00:00:00Z"
+    },
+    {
+      "id": "claim-verified-enterprise-count",
+      "brandId": "brand-lumino-cloud",
+      "claimText": "Serving 1,420 active verified enterprise clients globally as recorded in audited Q1 2026 disclosures.",
+      "supportingEvidence": "Quarterly Financial & Customer Audit, Deloitte & Touche LLP, Section 3.1.",
+      "productScope": "Global Enterprise Customer Base",
+      "validFrom": "2026-01-01",
+      "validUntil": "2026-12-31",
+      "status": "approved",
+      "sampleDataLabel": "Audited Claim Record",
+      "tags": [
+        "customers",
+        "metrics"
+      ],
+      "createdAt": "2026-01-25T00:00:00Z",
+      "updatedAt": "2026-01-25T00:00:00Z"
+    },
+    {
+      "id": "claim-solaris-spf50",
+      "brandId": "brand-solaris-sunscreen",
+      "claimText": "Broad Spectrum SPF 50 mineral protection powered by 20% non-nano zinc oxide.",
+      "supportingEvidence": "FDA OTC Sunscreen Monograph & AMA Laboratories In-Vivo SPF Protocol #AMA-2025-99.",
+      "productScope": "Solaris Daily Mineral Sunscreen SPF 50",
+      "validFrom": "2025-01-01",
+      "validUntil": "2027-12-31",
+      "status": "approved",
+      "sampleDataLabel": "Audited Clinical Claim",
+      "tags": [
+        "spf50",
+        "mineral",
+        "fda"
+      ],
+      "createdAt": "2026-02-01T00:00:00Z",
+      "updatedAt": "2026-02-01T00:00:00Z"
+    },
+    {
+      "id": "claim-solaris-water-resistant",
+      "brandId": "brand-solaris-sunscreen",
+      "claimText": "Water resistant for up to 80 minutes of swimming or sweating.",
+      "supportingEvidence": "Colipa Water Resistance Protocol 2025, Clinical Study Ref #WR-80M-2025.",
+      "productScope": "Solaris Daily Mineral Sunscreen SPF 50",
+      "validFrom": "2025-01-01",
+      "validUntil": "2027-12-31",
+      "status": "approved",
+      "sampleDataLabel": "Audited Clinical Claim",
+      "tags": [
+        "water-resistant",
+        "clinical"
+      ],
+      "createdAt": "2026-02-01T00:00:00Z",
+      "updatedAt": "2026-02-01T00:00:00Z"
+    }
+  ],
+  "audits": [
+    {
+      "id": "audit-1792849969534-2zzv",
+      "brandId": "brand-lumino-cloud",
+      "title": "Scenario B Test",
+      "channel": "website",
+      "content": "Accelerate your infrastructure with Lumino Cloud Mesh. We provide a guaranteed 99.9% uptime SLA exclusively for Enterprise Tier workloads with multi-region failover. Backed by our SOC 2 Type II and ISO/IEC 27001:2025 audited security framework, Lumino Cloud serves over 1,400 audited enterprise clients globally.",
+      "originalContent": "Accelerate your infrastructure with Lumino Cloud Mesh. We provide a guaranteed 99.9% uptime SLA exclusively for Enterprise Tier workloads with multi-region failover. Backed by our SOC 2 Type II and ISO/IEC 27001:2025 audited security framework, Lumino Cloud serves over 1,400 audited enterprise clients globally.",
+      "versionNumber": 1,
+      "timestamp": "2026-10-24T13:52:49.534Z",
+      "findings": [],
+      "passedChecks": [
+        {
+          "id": "passed-rule-rule-prohibited-hype",
+          "title": "Prohibition on Absolute Guarantees and Hyperbole",
+          "category": "terminology",
+          "explanation": "No prohibited wording or required term omissions detected for \"Prohibition on Absolute Guarantees and Hyperbole\".",
+          "source": "Legal & Risk Mitigation Policy v3.8, Section 4.2",
+          "checkedItem": "unbreakable guarantee, hack-proof, military-grade hack-proof, 100% bug-free, foolproof, infinite scalability, flawless"
+        },
+        {
+          "id": "passed-rule-rule-respectful-competitors",
+          "title": "Respectful Competitive Positioning",
+          "category": "brand_tone",
+          "explanation": "No prohibited wording or required term omissions detected for \"Respectful Competitive Positioning\".",
+          "source": "Brand Voice & Executive Communication Guidelines 2026 §3",
+          "checkedItem": "inferior competitors, slow dinosaurs, foolish, worthless, clueless, legacy trash"
+        },
+        {
+          "id": "passed-rule-rule-uptime-representation",
+          "title": "Accurate SLA & Uptime Representation",
+          "category": "factual_claims",
+          "explanation": "No prohibited wording or required term omissions detected for \"Accurate SLA & Uptime Representation\".",
+          "source": "Service Level Agreement Terms of Service 2026, Schedule B",
+          "checkedItem": "99.999%, five nines across all tiers"
+        },
+        {
+          "id": "passed-rule-rule-official-product-naming",
+          "title": "Standard Product Nomenclature: Lumino Cloud Mesh",
+          "category": "terminology",
+          "explanation": "No prohibited wording or required term omissions detected for \"Standard Product Nomenclature: Lumino Cloud Mesh\".",
+          "source": "Trademark & Product Marketing Style Guide 2026",
+          "checkedItem": "LuminoMesh, Lumino-Mesh, Lumino Network"
+        },
+        {
+          "id": "passed-rule-rule-customer-metrics",
+          "title": "Verified Customer Count Substantiation",
+          "category": "compliance",
+          "explanation": "No prohibited wording or required term omissions detected for \"Verified Customer Count Substantiation\".",
+          "source": "SEC/Corporate Regulatory Disclosure Policy §8",
+          "checkedItem": "Rule compliance"
+        },
+        {
+          "id": "passed-rule-rule-active-security-cert",
+          "title": "Current Information Security Certification Standard",
+          "category": "compliance",
+          "explanation": "No prohibited wording or required term omissions detected for \"Current Information Security Certification Standard\".",
+          "source": "Information Security Governance & Compliance Officer Memo #2025-09",
+          "checkedItem": "ISO-27001:2022, ISO 27001:2022"
+        },
+        {
+          "id": "passed-rule-rule-accessibility-readability",
+          "title": "Acronym Expansion and Plain Language Accessibility",
+          "category": "accessibility",
+          "explanation": "No prohibited wording or required term omissions detected for \"Acronym Expansion and Plain Language Accessibility\".",
+          "source": "WCAG 2.2 AA Marketing Accessibility Standard",
+          "checkedItem": "Rule compliance"
+        },
+        {
+          "id": "passed-rule-rule-visual-brand-consistency",
+          "title": "Logo Clearspace & Dark Mode Contrast",
+          "category": "visual_identity",
+          "explanation": "No prohibited wording or required term omissions detected for \"Logo Clearspace & Dark Mode Contrast\".",
+          "source": "Brand Identity System Specification v4.0",
+          "checkedItem": "Rule compliance"
+        },
+        {
+          "id": "passed-claim-claim-uptime-enterprise",
+          "title": "Enterprise Uptime SLA Claim Verified",
+          "category": "factual_claims",
+          "explanation": "Accurately aligns with registered 99.9% Enterprise Tier SLA without overpromising.",
+          "source": "SLA Master Services Agreement v2026.1, Schedule C. Audited by Global Reliability Engineering Q1 2026.",
+          "checkedItem": "99.9% uptime SLA is guaranteed exclusively on the Lumino Enterprise Tier with multi-region active redundancy enabled."
+        },
+        {
+          "id": "passed-claim-claim-soc2-iso27001",
+          "title": "Active Security Certification Verified",
+          "category": "compliance",
+          "explanation": "Verified current SOC 2 Type II and ISO/IEC 27001:2025 accreditations against third-party audit records.",
+          "source": "Third-party audit report by Coalfire Systems & Schellman, Certificate Ref #ISO-2025-LUM-8831.",
+          "checkedItem": "SOC 2 Type II certified and ISO/IEC 27001:2025 audited across all EMEA and US data center clusters."
+        }
+      ],
+      "score": 100,
+      "status": "ready_for_review",
+      "scoreBreakdown": {
+        "baseScore": 100,
+        "criticalDeductions": 0,
+        "highDeductions": 0,
+        "mediumDeductions": 0,
+        "lowDeductions": 0,
+        "criticalCount": 0,
+        "highCount": 0,
+        "mediumCount": 0,
+        "lowCount": 0,
+        "hasCriticalViolation": false,
+        "finalScore": 100,
+        "calculationPolicy": "Base 100 with penalties (High: -0, Medium: -0, Low: -0). Final score: 100/100."
+      },
+      "auditEngine": {
+        "model": "Deterministic & Heuristic Scanner",
+        "deterministicChecksCount": 0,
+        "aiChecksCount": 0,
+        "executionTimeMs": 2669,
+        "geminiApiUsed": false,
+        "note": "Gemini contextual analysis unavailable ({\"error\":{\"code\":503,\"message\":\"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\"status\":\"UNAVAILABLE\"}}). Deterministic & heuristic governance engine evaluated draft."
+      }
+    },
+    {
+      "id": "audit-1792849966843-zhnu",
+      "brandId": "brand-lumino-cloud",
+      "title": "Scenario A Test",
+      "channel": "website",
+      "content": "Accelerate with LuminoMesh, the military-grade hack-proof cloud. We deliver an unbreakable guarantee of 99.999% uptime.",
+      "originalContent": "Accelerate with LuminoMesh, the military-grade hack-proof cloud. We deliver an unbreakable guarantee of 99.999% uptime.",
+      "versionNumber": 1,
+      "timestamp": "2026-10-24T13:52:46.843Z",
+      "findings": [
+        {
+          "id": "det-prohibited-rule-prohibited-hype-79",
+          "category": "terminology",
+          "title": "Prohibited Term: \"unbreakable guarantee\"",
+          "quotedText": "unbreakable guarantee",
+          "explanation": "Found prohibited phrase \"unbreakable guarantee\". Rule policy: Never state or imply that the system is 100% bug-free, infallible, or unconditionally guaranteed against breaches or failures.",
+          "severity": "critical",
+          "ruleId": "rule-prohibited-hype",
+          "ruleTitle": "Prohibition on Absolute Guarantees and Hyperbole",
+          "sourceExcerpt": "Legal & Risk Mitigation Policy v3.8, Section 4.2",
+          "whyItApplies": "The marketing text includes \"unbreakable guarantee\", which is explicitly listed as prohibited in \"Prohibition on Absolute Guarantees and Hyperbole\" (Legal & Risk Mitigation Policy v3.8, Section 4.2).",
+          "suggestedCorrection": "enterprise-grade reliability SLA",
+          "confidenceExplanation": "Exact-token deterministic pattern matching confirmed against active brand rule dictionary.",
+          "validationMethod": "deterministic",
+          "findingType": "prohibited_term",
+          "userFriendlyStatusLabel": "Violates a brand rule",
+          "userStatus": "pending"
+        },
+        {
+          "id": "det-prohibited-rule-prohibited-hype-47",
+          "category": "terminology",
+          "title": "Prohibited Term: \"hack-proof\"",
+          "quotedText": "hack-proof",
+          "explanation": "Found prohibited phrase \"hack-proof\". Rule policy: Never state or imply that the system is 100% bug-free, infallible, or unconditionally guaranteed against breaches or failures.",
+          "severity": "critical",
+          "ruleId": "rule-prohibited-hype",
+          "ruleTitle": "Prohibition on Absolute Guarantees and Hyperbole",
+          "sourceExcerpt": "Legal & Risk Mitigation Policy v3.8, Section 4.2",
+          "whyItApplies": "The marketing text includes \"hack-proof\", which is explicitly listed as prohibited in \"Prohibition on Absolute Guarantees and Hyperbole\" (Legal & Risk Mitigation Policy v3.8, Section 4.2).",
+          "suggestedCorrection": "SOC 2 Type II and ISO/IEC 27001:2025 audited security infrastructure",
+          "confidenceExplanation": "Exact-token deterministic pattern matching confirmed against active brand rule dictionary.",
+          "validationMethod": "deterministic",
+          "findingType": "prohibited_term",
+          "userFriendlyStatusLabel": "Violates a brand rule",
+          "userStatus": "pending"
+        },
+        {
+          "id": "det-prohibited-rule-prohibited-hype-32",
+          "category": "terminology",
+          "title": "Prohibited Term: \"military-grade hack-proof\"",
+          "quotedText": "military-grade hack-proof",
+          "explanation": "Found prohibited phrase \"military-grade hack-proof\". Rule policy: Never state or imply that the system is 100% bug-free, infallible, or unconditionally guaranteed against breaches or failures.",
+          "severity": "critical",
+          "ruleId": "rule-prohibited-hype",
+          "ruleTitle": "Prohibition on Absolute Guarantees and Hyperbole",
+          "sourceExcerpt": "Legal & Risk Mitigation Policy v3.8, Section 4.2",
+          "whyItApplies": "The marketing text includes \"military-grade hack-proof\", which is explicitly listed as prohibited in \"Prohibition on Absolute Guarantees and Hyperbole\" (Legal & Risk Mitigation Policy v3.8, Section 4.2).",
+          "suggestedCorrection": "SOC 2 Type II and ISO/IEC 27001:2025 audited security infrastructure",
+          "confidenceExplanation": "Exact-token deterministic pattern matching confirmed against active brand rule dictionary.",
+          "validationMethod": "deterministic",
+          "findingType": "prohibited_term",
+          "userFriendlyStatusLabel": "Violates a brand rule",
+          "userStatus": "pending"
+        },
+        {
+          "id": "det-prohibited-rule-uptime-representation-104",
+          "category": "factual_claims",
+          "title": "Prohibited Term: \"99.999%\"",
+          "quotedText": "99.999%",
+          "explanation": "Found prohibited phrase \"99.999%\". Rule policy: Uptime claims must accurately distinguish between the Enterprise Tier SLA (99.9%) and the Standard Tier availability target (99.5%). 99.999% uptime is strictly unapproved.",
+          "severity": "critical",
+          "ruleId": "rule-uptime-representation",
+          "ruleTitle": "Accurate SLA & Uptime Representation",
+          "sourceExcerpt": "Service Level Agreement Terms of Service 2026, Schedule B",
+          "whyItApplies": "The marketing text includes \"99.999%\", which is explicitly listed as prohibited in \"Accurate SLA & Uptime Representation\" (Service Level Agreement Terms of Service 2026, Schedule B).",
+          "suggestedCorrection": "99.9% uptime SLA (Enterprise Tier)",
+          "confidenceExplanation": "Exact-token deterministic pattern matching confirmed against active brand rule dictionary.",
+          "validationMethod": "deterministic",
+          "findingType": "prohibited_term",
+          "userFriendlyStatusLabel": "Violates a brand rule",
+          "userStatus": "pending"
+        },
+        {
+          "id": "det-required-rule-uptime-representation",
+          "category": "factual_claims",
+          "title": "Missing Required SLA Tier Specification",
+          "quotedText": "We deliver an unbreakable guarantee of 99.999% uptime.",
+          "explanation": "Uptime statements require explicit mention of \"SLA\" and \"Enterprise Tier\" to prevent misleading standard-tier users.",
+          "severity": "high",
+          "ruleId": "rule-uptime-representation",
+          "ruleTitle": "Accurate SLA & Uptime Representation",
+          "sourceExcerpt": "Service Level Agreement Terms of Service 2026, Schedule B",
+          "whyItApplies": "Under Schedule B of the SLA Terms of Service, availability percentages are only contractual commitments for the Enterprise Tier.",
+          "suggestedCorrection": "Lumino Cloud provides a 99.9% uptime SLA exclusively for Enterprise Tier workloads.",
+          "confidenceExplanation": "Deterministic token absence check: mandatory contractual terms (SLA, Enterprise Tier) were omitted.",
+          "validationMethod": "deterministic",
+          "findingType": "required_term_missing",
+          "userFriendlyStatusLabel": "Violates a brand rule",
+          "userStatus": "pending"
+        },
+        {
+          "id": "det-prohibited-rule-official-product-naming-16",
+          "category": "terminology",
+          "title": "Prohibited Term: \"LuminoMesh\"",
+          "quotedText": "LuminoMesh",
+          "explanation": "Found prohibited phrase \"LuminoMesh\". Rule policy: Always use the official product trademark \"Lumino Cloud Mesh\". Never hyphenate as \"Lumino-Mesh\" or abbreviate to \"LuminoMesh\".",
+          "severity": "medium",
+          "ruleId": "rule-official-product-naming",
+          "ruleTitle": "Standard Product Nomenclature: Lumino Cloud Mesh",
+          "sourceExcerpt": "Trademark & Product Marketing Style Guide 2026",
+          "whyItApplies": "The marketing text includes \"LuminoMesh\", which is explicitly listed as prohibited in \"Standard Product Nomenclature: Lumino Cloud Mesh\" (Trademark & Product Marketing Style Guide 2026).",
+          "suggestedCorrection": "Lumino Cloud Mesh",
+          "confidenceExplanation": "Exact-token deterministic pattern matching confirmed against active brand rule dictionary.",
+          "validationMethod": "deterministic",
+          "findingType": "prohibited_term",
+          "userFriendlyStatusLabel": "Violates a brand rule",
+          "userStatus": "pending"
+        },
+        {
+          "id": "det-naming-rule-official-product-naming",
+          "category": "terminology",
+          "title": "Inexact Product Trademark Naming",
+          "quotedText": "Accelerate with LuminoMesh, the military-grade hack-proof cloud.",
+          "explanation": "Content references the cloud mesh infrastructure without using the registered trademark \"Lumino Cloud Mesh\".",
+          "severity": "medium",
+          "ruleId": "rule-official-product-naming",
+          "ruleTitle": "Standard Product Nomenclature: Lumino Cloud Mesh",
+          "sourceExcerpt": "Trademark & Product Marketing Style Guide 2026",
+          "whyItApplies": "Trademark guidelines mandate writing out the full registered mark \"Lumino Cloud Mesh\" on first and prominent mentions.",
+          "suggestedCorrection": "Lumino Cloud Mesh",
+          "confidenceExplanation": "Deterministic trademark compliance scanner detected non-standard naming variant.",
+          "validationMethod": "deterministic",
+          "findingType": "required_term_missing",
+          "userFriendlyStatusLabel": "Violates a brand rule",
+          "userStatus": "pending"
+        },
+        {
+          "id": "det-contradict-uptime",
+          "category": "factual_claims",
+          "title": "Direct Contradiction with Approved SLA Claim",
+          "quotedText": "We deliver an unbreakable guarantee of 99.999% uptime.",
+          "explanation": "Approved Claim states: \"99.9% uptime SLA is guaranteed exclusively on the Lumino Enterprise Tier\". Marketing content inflates availability to 99.999% or extends it to shared tiers.",
+          "severity": "critical",
+          "claimId": "claim-uptime-enterprise",
+          "sourceExcerpt": "99.9% uptime SLA is guaranteed exclusively on the Lumino Enterprise Tier with multi-region active redundancy enabled.",
+          "whyItApplies": "Contractual SLAs are legally binding. Advertising 99.999% uptime or shared tier coverage creates immediate breach of contract liability.",
+          "suggestedCorrection": "guaranteed 99.9% uptime SLA exclusively for Enterprise Tier workloads with multi-region failover",
+          "confidenceExplanation": "Deterministic contradiction detected against Claims Registry Record ID #claim-uptime-enterprise.",
+          "validationMethod": "deterministic",
+          "findingType": "contradiction",
+          "userFriendlyStatusLabel": "Violates a brand rule",
+          "userStatus": "pending"
+        }
+      ],
+      "passedChecks": [
+        {
+          "id": "passed-rule-rule-respectful-competitors",
+          "title": "Respectful Competitive Positioning",
+          "category": "brand_tone",
+          "explanation": "No prohibited wording or required term omissions detected for \"Respectful Competitive Positioning\".",
+          "source": "Brand Voice & Executive Communication Guidelines 2026 §3",
+          "checkedItem": "inferior competitors, slow dinosaurs, foolish, worthless, clueless, legacy trash"
+        },
+        {
+          "id": "passed-rule-rule-customer-metrics",
+          "title": "Verified Customer Count Substantiation",
+          "category": "compliance",
+          "explanation": "No prohibited wording or required term omissions detected for \"Verified Customer Count Substantiation\".",
+          "source": "SEC/Corporate Regulatory Disclosure Policy §8",
+          "checkedItem": "Rule compliance"
+        },
+        {
+          "id": "passed-rule-rule-active-security-cert",
+          "title": "Current Information Security Certification Standard",
+          "category": "compliance",
+          "explanation": "No prohibited wording or required term omissions detected for \"Current Information Security Certification Standard\".",
+          "source": "Information Security Governance & Compliance Officer Memo #2025-09",
+          "checkedItem": "ISO-27001:2022, ISO 27001:2022"
+        },
+        {
+          "id": "passed-rule-rule-accessibility-readability",
+          "title": "Acronym Expansion and Plain Language Accessibility",
+          "category": "accessibility",
+          "explanation": "No prohibited wording or required term omissions detected for \"Acronym Expansion and Plain Language Accessibility\".",
+          "source": "WCAG 2.2 AA Marketing Accessibility Standard",
+          "checkedItem": "Rule compliance"
+        },
+        {
+          "id": "passed-rule-rule-visual-brand-consistency",
+          "title": "Logo Clearspace & Dark Mode Contrast",
+          "category": "visual_identity",
+          "explanation": "No prohibited wording or required term omissions detected for \"Logo Clearspace & Dark Mode Contrast\".",
+          "source": "Brand Identity System Specification v4.0",
+          "checkedItem": "Rule compliance"
+        }
+      ],
+      "score": 0,
+      "status": "needs_changes",
+      "scoreBreakdown": {
+        "baseScore": 100,
+        "criticalDeductions": 175,
+        "highDeductions": 20,
+        "mediumDeductions": 20,
+        "lowDeductions": 0,
+        "criticalCount": 5,
+        "highCount": 1,
+        "mediumCount": 2,
+        "lowCount": 0,
+        "hasCriticalViolation": true,
+        "finalScore": 0,
+        "calculationPolicy": "Base 100 with penalties (Critical: -175, High: -20, Medium: -20, Low: -0). Critical SLA/regulatory violation present: status locked to 'Action Required' and score capped at 60."
+      },
+      "auditEngine": {
+        "model": "Deterministic & Heuristic Scanner",
+        "deterministicChecksCount": 8,
+        "aiChecksCount": 1,
+        "executionTimeMs": 16010,
+        "geminiApiUsed": false,
+        "note": "Gemini contextual analysis unavailable (Gemini API call timed out after 16s). Deterministic & heuristic governance engine evaluated draft."
+      }
+    },
+    {
+      "id": "audit-1792832750571-7umb",
+      "brandId": "brand-lumino-cloud",
+      "title": "Test Audit",
+      "channel": "website",
+      "content": "Accelerate with LuminoMesh, the military-grade hack-proof cloud. We deliver an unbreakable guarantee of 99.999% uptime.",
+      "originalContent": "Accelerate with LuminoMesh, the military-grade hack-proof cloud. We deliver an unbreakable guarantee of 99.999% uptime.",
+      "versionNumber": 1,
+      "timestamp": "2026-10-24T09:05:50.571Z",
+      "findings": [
+        {
+          "id": "det-prohibited-rule-prohibited-hype-79",
+          "category": "terminology",
+          "title": "Prohibited Wording: \"unbreakable guarantee\"",
+          "quotedText": "unbreakable guarantee",
+          "explanation": "Found prohibited phrase \"unbreakable guarantee\". Rule mandates: Never state or imply that the system is 100% bug-free, infallible, or unconditionally guaranteed against breaches or failures.",
+          "severity": "critical",
+          "ruleId": "rule-prohibited-hype",
+          "sourceExcerpt": "Legal & Risk Mitigation Policy v3.8, Section 4.2",
+          "suggestedCorrection": "enterprise-grade reliability SLA",
+          "confidenceExplanation": "Deterministic exact-token string matching verified against approved rule dictionary.",
+          "validationMethod": "deterministic",
+          "findingType": "prohibited_term",
+          "userStatus": "pending"
+        },
+        {
+          "id": "det-prohibited-rule-prohibited-hype-47",
+          "category": "terminology",
+          "title": "Prohibited Wording: \"hack-proof\"",
+          "quotedText": "hack-proof",
+          "explanation": "Found prohibited phrase \"hack-proof\". Rule mandates: Never state or imply that the system is 100% bug-free, infallible, or unconditionally guaranteed against breaches or failures.",
+          "severity": "critical",
+          "ruleId": "rule-prohibited-hype",
+          "sourceExcerpt": "Legal & Risk Mitigation Policy v3.8, Section 4.2",
+          "suggestedCorrection": "SOC 2 Type II and ISO/IEC 27001:2025 audited security infrastructure",
+          "confidenceExplanation": "Deterministic exact-token string matching verified against approved rule dictionary.",
+          "validationMethod": "deterministic",
+          "findingType": "prohibited_term",
+          "userStatus": "pending"
+        },
+        {
+          "id": "det-prohibited-rule-prohibited-hype-32",
+          "category": "terminology",
+          "title": "Prohibited Wording: \"military-grade hack-proof\"",
+          "quotedText": "military-grade hack-proof",
+          "explanation": "Found prohibited phrase \"military-grade hack-proof\". Rule mandates: Never state or imply that the system is 100% bug-free, infallible, or unconditionally guaranteed against breaches or failures.",
+          "severity": "critical",
+          "ruleId": "rule-prohibited-hype",
+          "sourceExcerpt": "Legal & Risk Mitigation Policy v3.8, Section 4.2",
+          "suggestedCorrection": "SOC 2 Type II and ISO/IEC 27001:2025 audited security infrastructure",
+          "confidenceExplanation": "Deterministic exact-token string matching verified against approved rule dictionary.",
+          "validationMethod": "deterministic",
+          "findingType": "prohibited_term",
+          "userStatus": "pending"
+        },
+        {
+          "id": "det-required-rule-uptime-representation",
+          "category": "factual_claims",
+          "title": "Missing Required SLA Tier Specification",
+          "quotedText": "We deliver an unbreakable guarantee of 99.999% uptime.",
+          "explanation": "Uptime statements require explicit mention of \"SLA\" and \"Enterprise tier\" to prevent misleading standard-tier users.",
+          "severity": "high",
+          "ruleId": "rule-uptime-representation",
+          "sourceExcerpt": "Service Level Agreement Terms of Service 2026, Schedule B",
+          "suggestedCorrection": "Lumino Cloud provides a 99.9% uptime SLA exclusively for Enterprise Tier workloads.",
+          "confidenceExplanation": "Deterministic token absence check for mandatory contractual terms (SLA, Enterprise tier).",
+          "validationMethod": "deterministic",
+          "findingType": "required_term_missing",
+          "userStatus": "pending"
+        },
+        {
+          "id": "det-prohibited-rule-official-product-naming-16",
+          "category": "terminology",
+          "title": "Prohibited Wording: \"LuminoMesh\"",
+          "quotedText": "LuminoMesh",
+          "explanation": "Found prohibited phrase \"LuminoMesh\". Rule mandates: Always use the official product trademark \"Lumino Cloud Mesh\". Never hyphenate as \"Lumino-Mesh\" or abbreviate to \"LuminoMesh\".",
+          "severity": "medium",
+          "ruleId": "rule-official-product-naming",
+          "sourceExcerpt": "Trademark & Product Marketing Style Guide 2026",
+          "suggestedCorrection": "Lumino Cloud Mesh",
+          "confidenceExplanation": "Deterministic exact-token string matching verified against approved rule dictionary.",
+          "validationMethod": "deterministic",
+          "findingType": "prohibited_term",
+          "userStatus": "pending"
+        },
+        {
+          "id": "det-naming-rule-official-product-naming",
+          "category": "terminology",
+          "title": "Inexact Product Trademark Naming",
+          "quotedText": "Accelerate with LuminoMesh, the military-grade hack-proof cloud.",
+          "explanation": "Content references the mesh infrastructure without using the full trademarked name \"Lumino Cloud Mesh\".",
+          "severity": "medium",
+          "ruleId": "rule-official-product-naming",
+          "sourceExcerpt": "Trademark & Product Marketing Style Guide 2026",
+          "suggestedCorrection": "Lumino Cloud Mesh",
+          "confidenceExplanation": "Deterministic trademark compliance scanner.",
+          "validationMethod": "deterministic",
+          "findingType": "required_term_missing",
+          "userStatus": "pending"
+        },
+        {
+          "id": "det-contradict-uptime",
+          "category": "factual_claims",
+          "title": "Direct Contradiction with Approved SLA Claim",
+          "quotedText": "We deliver an unbreakable guarantee of 99.999% uptime.",
+          "explanation": "Approved Claim states: \"99.9% uptime SLA is guaranteed exclusively on the Lumino Enterprise Tier\". Marketing content falsely extends this to all tiers or inflates availability to 99.999%.",
+          "severity": "critical",
+          "claimId": "claim-uptime-enterprise",
+          "sourceExcerpt": "99.9% uptime SLA is guaranteed exclusively on the Lumino Enterprise Tier with multi-region active redundancy enabled.",
+          "suggestedCorrection": "Lumino Enterprise tier provides a guaranteed 99.9% uptime SLA with automated multi-region failover.",
+          "confidenceExplanation": "Deterministic contradiction detected against Claims Registry ID #claim-uptime-enterprise.",
+          "validationMethod": "deterministic",
+          "findingType": "contradiction",
+          "userStatus": "pending"
+        }
+      ],
+      "score": 0,
+      "status": "needs_changes",
+      "auditEngine": {
+        "model": "Deterministic & Heuristic Scanner",
+        "deterministicChecksCount": 7,
+        "aiChecksCount": 1,
+        "executionTimeMs": 3917,
+        "geminiApiUsed": false,
+        "note": "Gemini API call timed out or failed ({\"error\":{\"code\":503,\"message\":\"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\"status\":\"UNAVAILABLE\"}}). Deterministic & heuristic governance engine took over."
+      }
+    },
+    {
+      "id": "audit-1792684973569-h6x7",
+      "brandId": "brand-lumino-cloud",
+      "title": "Quick Test",
+      "channel": "website",
+      "content": "Lumino delivers 100% unbreakable uptime and is 10x faster than AWS.",
+      "originalContent": "Lumino delivers 100% unbreakable uptime and is 10x faster than AWS.",
+      "versionNumber": 1,
+      "timestamp": "2026-10-22T16:02:53.569Z",
+      "findings": [
+        {
+          "id": "det-required-rule-uptime-representation",
+          "category": "factual_claims",
+          "title": "Missing Required SLA Tier Specification",
+          "quotedText": "Lumino delivers 100% unbreakable uptime and is 10x faster than AWS.",
+          "explanation": "Uptime statements require explicit mention of \"SLA\" and \"Enterprise tier\" to prevent misleading standard-tier users.",
+          "severity": "high",
+          "ruleId": "rule-uptime-representation",
+          "sourceExcerpt": "Service Level Agreement Terms of Service 2026, Schedule B",
+          "suggestedCorrection": "Lumino Cloud provides a 99.9% uptime SLA exclusively for Enterprise Tier workloads.",
+          "confidenceExplanation": "Deterministic token absence check for mandatory contractual terms (SLA, Enterprise tier).",
+          "validationMethod": "deterministic",
+          "findingType": "required_term_missing",
+          "userStatus": "pending"
+        }
+      ],
+      "score": 82,
+      "status": "needs_changes",
+      "auditEngine": {
+        "model": "Deterministic & Heuristic Scanner",
+        "deterministicChecksCount": 1,
+        "aiChecksCount": 0,
+        "executionTimeMs": 1513,
+        "geminiApiUsed": false,
+        "note": "Gemini API call timed out or failed ({\"error\":{\"code\":503,\"message\":\"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\"status\":\"UNAVAILABLE\"}}). Deterministic & heuristic governance engine took over."
+      }
+    },
+    {
+      "id": "audit-demo-sample-01",
+      "brandId": "brand-lumino-cloud",
+      "title": "Q2 Global Architecture Brief",
+      "channel": "website",
+      "content": "Lumino Cloud Mesh delivers resilient edge compute with under 45ms cold-start latency. Backed by our Enterprise tier 99.9% uptime SLA, modern teams can scale without operational friction.",
+      "versionNumber": 1,
+      "timestamp": "2026-10-20T14:30:00Z",
+      "status": "approved",
+      "score": 100,
+      "findings": [],
+      "reviewDecision": {
+        "decision": "approved",
+        "reviewerName": "Sarah Chen (VP of Brand Governance)",
+        "reason": "Fully compliant with approved nomenclature and verified SLA registry claims.",
+        "timestamp": "2026-10-20T16:00:00Z"
+      },
+      "auditEngine": {
+        "model": "gemini-3.8-flash",
+        "deterministicChecksCount": 8,
+        "aiChecksCount": 4,
+        "executionTimeMs": 412,
+        "geminiApiUsed": true
+      }
+    }
+  ],
+  "lastUpdated": "2026-10-24T13:52:49.534Z"
+}

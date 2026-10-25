@@ -1,0 +1,6 @@
+{
+  "name": "Inkloom AI",
+  "description": "Enterprise AI-assisted brand-governance platform to verify marketing content against approved brand guidelines, terminology, and claims.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
